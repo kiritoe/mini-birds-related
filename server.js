@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 
 // Controllers
 var SightingCtrl = require('./controllers/SightingCtrl');
-
+var UserCtrl = 
 // Express
 var app = express();
 
@@ -20,6 +20,10 @@ app.get('/sighting', SightingCtrl.read);
 app.put('/sighting/:id', SightingCtrl.update);
 app.delete('/sighting/:id', SightingCtrl.delete);
 
+app.post('/user',UserCtrl );
+app.get();
+app.put();
+app.delete();
 // Connections
 var port = 9001;
 var mongoUri = 'mongodb://localhost:27017/mini-birds-mongoose';
